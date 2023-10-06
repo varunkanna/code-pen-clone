@@ -32,7 +32,7 @@ function App() {
         <Editor language='css' displayName='CSS' value={css} onChange={setCss} />
         <Editor language='javascript' displayName='JS' value={js} onChange={setJs} />
       </div>
-      <div className="butm-box">
+      <div className="box">
         <iframe
           title="output"
           sandbox="allow-scripts"

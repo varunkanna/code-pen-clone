@@ -4,6 +4,7 @@ body{
 .box{
   height: 50vh;
   display: flex;
+  overflow-y: hidden;
 }
 .top-box{
   background-color: gray;
@@ -16,6 +17,13 @@ body{
   padding: .5rem;
   background-color: gray;
 }
+.editor-container.collapsed {
+  flex-grow: 0;
+}
+.CodeMirror-scroll{
+  position: absolute !important;
+  overflow: hidden !important;
+}
 .editor-title{
   display: flex;
   background-color: black;
@@ -24,6 +32,11 @@ body{
   color: white;
   border-top-left-radius: .5rem;
   border-top-right-radius: .5rem;
+}
+.editor-title button{
+  margin-left: .5rem;
+  padding: auto;
+  text-align: center;
 }
 
 .CodeMirror{
